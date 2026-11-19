@@ -10,7 +10,15 @@ demoButtons.forEach((button) => {
   });
 
   button.addEventListener("animationend", (event) => {
-    if (event.target === button || event.target.classList.contains("label")) {
+    // Smoke particles are staggered; wait for the final particle before cleanup.
+    if (button.classList.contains("smoking")) {
+      const lastParticle = button.querySelector(".smoke-cloud i:last-child");
+      if (event.target === lastParticle) button.classList.remove("is-playing");
+      return;
+    }
+
+    // Animation events bubble from labels and decorative elements.
+    if (event.target.closest(".demo-btn") === button) {
       button.classList.remove("is-playing");
     }
   });
