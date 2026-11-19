@@ -2,80 +2,68 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#1a1a2e">
-  <!-- Primary SEO -->
-  <title>Button Label Animations | mrchandrayee</title>
-  <meta name="description" content="Smooth, interactive button label animations with CSS transitions and JavaScript. Pure HTML/CSS/JS microinteraction showcase.">
-  <meta name="author" content="mrchandrayee">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090d18">
+  <meta name="color-scheme" content="dark">
+  <title>Button Label Animations — Interactive UI Microinteractions | IAPFSAI</title>
+  <meta name="description" content="Explore six interactive button label microinteractions built with semantic HTML, modern CSS animations and vanilla JavaScript. A frontend engineering showcase by IAPFSAI Technologies.">
+  <meta name="author" content="IAPFSAI Technologies Private Limited">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://mrchandrayee.github.io/button-label-animations/">
-
-  <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://mrchandrayee.github.io/button-label-animations/">
-  <meta property="og:title" content="Button Label Animations | mrchandrayee">
-  <meta property="og:description" content="Smooth, interactive button label animations with CSS transitions and JavaScript. Pure HTML/CSS/JS microinteraction showcase.">
-  <meta property="og:image" content="https://mrchandrayee.github.io/button-label-animations/preview.png">
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:url" content="https://mrchandrayee.github.io/button-label-animations/">
-  <meta name="twitter:title" content="Button Label Animations | mrchandrayee">
-  <meta name="twitter:description" content="Smooth, interactive button label animations with CSS transitions and JavaScript. Pure HTML/CSS/JS microinteraction showcase.">
-  <meta name="twitter:image" content="https://mrchandrayee.github.io/button-label-animations/preview.png">
-  <meta name="twitter:creator" content="@mrchandrayee">
-
-  <!-- JSON-LD -->
+  <meta property="og:title" content="Button Label Animations — UI Microinteraction Lab">
+  <meta property="og:description" content="Six expressive button interactions. Built with HTML, CSS and JavaScript by IAPFSAI Technologies.">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Button Label Animations — UI Microinteraction Lab">
+  <meta name="twitter:description" content="Six expressive button interactions built with HTML, CSS and JavaScript.">
+  <link rel="stylesheet" href="style.css">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "WebApplication",
     "name": "Button Label Animations",
-    "description": "Smooth, interactive button label animations with CSS transitions and JavaScript. Pure HTML/CSS/JS microinteraction showcase.",
+    "applicationCategory": "DeveloperApplication",
+    "operatingSystem": "Any",
+    "description": "An interactive showcase of six CSS and JavaScript button label microinteractions.",
     "url": "https://mrchandrayee.github.io/button-label-animations/",
-    "author": { "@type": "Person", "name": "mrchandrayee", "url": "https://github.com/mrchandrayee" },
-    "applicationCategory": "WebApplication",
-    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+    "author": { "@type": "Organization", "name": "IAPFSAI Technologies Private Limited", "url": "https://iapfsai.com/" },
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "INR" }
   }
   </script>
-  <meta name="theme-color" content="#090a10">
-  
-  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
 </head>
 <body>
-  <main class="page">
-    <header class="heading">
-      <p class="eyebrow">MICRO INTERACTIONS / 001</p>
-      <h1>Button Label<br><span>Animations</span></h1>
-      <p class="subtitle">Three little interactions. One click-worthy interface.</p>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+  <main class="shell">
+    <nav class="topbar" aria-label="Project navigation">
+      <a class="wordmark" href="https://iapfsai.com/" target="_blank" rel="noreferrer" aria-label="IAPFSAI Technologies home"><span class="wordmark-mark" aria-hidden="true">✳</span><span>IAPFSAI<span class="wordmark-muted"> / LAB</span></span></a>
+      <span class="project-index">INTERACTION STUDY <b>№ 001</b></span>
+    </nav>
+    <header class="hero">
+      <p class="eyebrow"><span></span> FRONTEND MICROINTERACTION SHOWCASE</p>
+      <h1>Small details.<br><span>Memorable interactions.</span></h1>
+      <p class="hero-copy">Six expressive button label animations that make everyday interfaces feel more alive. Hover, focus or tap to explore each motion.</p>
+      <div class="hero-meta"><span><i class="meta-dot"></i> 06 INTERACTIONS</span><span>PURE HTML · CSS · JAVASCRIPT</span><span>ZERO DEPENDENCIES</span></div>
     </header>
-
-    <section class="stage" aria-label="Button animation examples">
-      <button class="demo-btn jumping" type="button">
-        <span class="label">Jumping</span>
-        <span class="shadow" aria-hidden="true"></span>
-      </button>
-      <button class="demo-btn smoking" type="button">
-        <span class="smoke-cloud" aria-hidden="true">
-          <i></i><i></i><i></i><i></i><i></i><i></i>
-        </span>
-        <span class="label">Smoke</span>
-      </button>
-      <button class="demo-btn driving" type="button">
-        <span class="label">Drive</span>
-        <span class="speed-lines" aria-hidden="true"><i></i><i></i><i></i></span>
-      </button>
+    <section class="showcase" aria-labelledby="showcase-title">
+      <div class="section-heading"><div><p class="eyebrow">THE INTERACTION PLAYGROUND</p><h2 id="showcase-title">Choose a motion</h2></div><p class="section-note">Hover or focus a button.<br>Tap to replay on touch screens.</p></div>
+      <div class="demo-grid">
+        <article class="demo-card"><div class="card-top"><span class="card-number">01</span><span class="motion-tag">SPRING</span></div><div class="demo-stage stage-lilac"><button class="demo-btn jumping" type="button" aria-label="Replay jumping button animation"><span class="label">Jumping</span><span class="shadow" aria-hidden="true"></span></button></div><h3>Jump & land</h3><p>A playful lift, squash and soft landing shadow.</p></article>
+        <article class="demo-card"><div class="card-top"><span class="card-number">02</span><span class="motion-tag">ATMOSPHERIC</span></div><div class="demo-stage stage-slate"><button class="demo-btn smoking" type="button" aria-label="Replay smoke button animation"><span class="smoke-cloud" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></span><span class="label">Smoke</span></button></div><h3>Smoke trail</h3><p>Soft vapor particles rise, expand and dissolve.</p></article>
+        <article class="demo-card"><div class="card-top"><span class="card-number">03</span><span class="motion-tag">VELOCITY</span></div><div class="demo-stage stage-ice"><button class="demo-btn driving" type="button" aria-label="Replay drive button animation"><span class="label">Drive</span><span class="speed-lines" aria-hidden="true"><i></i><i></i><i></i></span></button></div><h3>Drive away</h3><p>The label accelerates forward with speed lines.</p></article>
+        <article class="demo-card"><div class="card-top"><span class="card-number">04</span><span class="motion-tag">3D FLIP</span></div><div class="demo-stage stage-peach"><button class="demo-btn flipping" type="button" aria-label="Replay flip button animation"><span class="label">Flip me</span></button></div><h3>Flip label</h3><p>A crisp 3D rotation reveals a tactile motion.</p></article>
+        <article class="demo-card"><div class="card-top"><span class="card-number">05</span><span class="motion-tag">ELASTIC</span></div><div class="demo-stage stage-mint"><button class="demo-btn elastic" type="button" aria-label="Replay elastic button animation"><span class="label">Elastic</span></button></div><h3>Elastic press</h3><p>A responsive stretch-and-settle interaction.</p></article>
+        <article class="demo-card"><div class="card-top"><span class="card-number">06</span><span class="motion-tag">LIGHT SWEEP</span></div><div class="demo-stage stage-dark"><button class="demo-btn shining" type="button" aria-label="Replay shine button animation"><span class="shine-sweep" aria-hidden="true"></span><span class="label">Shine</span></button></div><h3>Shine through</h3><p>A subtle light sweep adds polish to the button.</p></article>
+      </div>
+      <p class="interaction-hint"><span aria-hidden="true">✦</span> Pro tip: use Tab to focus each button, then press Enter or Space to replay.</p>
     </section>
-
-    <p class="hint">Hover or tap a button to play its animation</p>
-    <section class="details">
-      <article><span class="number">01</span><h2>Jumping</h2><p>A springy lift, squash and soft landing shadow.</p></article>
-      <article><span class="number">02</span><h2>Smoke</h2><p>Soft vapor puffs rise and fade behind the label.</p></article>
-      <article><span class="number">03</span><h2>Drive</h2><p>The label accelerates forward with trailing speed lines.</p></article>
-    </section>
-    <footer>BUTTON LABEL ANIMATIONS <span>•</span> HTML / CSS / JS</footer>
+    <section class="build-note" aria-label="Implementation details"><div><p class="eyebrow">BUILT FOR REAL INTERFACES</p><h2>Motion with a purpose.</h2></div><p>These examples are intentionally lightweight: semantic buttons, CSS-driven motion and a small JavaScript replay controller. Adapt the patterns to calls to action, onboarding flows, dashboards and product interfaces.</p><div class="build-tags"><span>Accessible controls</span><span>Responsive layout</span><span>Reduced-motion aware</span><span>No frameworks</span></div></section>
+    <footer class="footer">
+      <div class="footer-main"><div><p class="eyebrow">ENGINEERED BY</p><a class="footer-brand" href="https://iapfsai.com/" target="_blank" rel="noreferrer">IAPFSAI Technologies<span>↗</span></a><p class="footer-copy">AI products and production-ready software for businesses that need to build, automate and scale.</p></div><div class="footer-cta"><p>Need a polished interaction or a complete digital product?</p><a href="https://iapfsai.com/" target="_blank" rel="noreferrer">Let's build it together <span>↗</span></a></div></div>
+      <div class="footer-bottom"><span>© <span id="year">2026</span> IAPFSAI Technologies Private Limited</span><span>HTML · CSS · VANILLA JS</span><a href="https://github.com/mrchandrayee/button-label-animations" target="_blank" rel="noreferrer">VIEW SOURCE ↗</a></div>
+    </footer>
   </main>
-  <script src="app.js"></script>
 </body>
 </html>
