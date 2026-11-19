@@ -15,3 +15,6 @@
 @media(max-width:760px){.shell{width:min(100% - 32px,600px)}.hero{padding:65px 0 52px}.showcase{padding:22px}.demo-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.build-note{grid-template-columns:1fr;gap:15px;padding:52px 4px}.build-tags{grid-column:1}}
 @media(max-width:480px){.topbar{height:68px}.project-index{font-size:8px;letter-spacing:.05em}.hero{padding:54px 0 42px}.hero-copy{font-size:14px}.hero-meta{gap:10px 14px;font-size:8px}.showcase{padding:15px;border-radius:16px}.section-heading{align-items:start;flex-direction:column}.section-note{text-align:left}.demo-grid{gap:9px}.demo-card{padding:10px}.demo-stage{min-height:112px}.demo-btn{min-width:90px;height:39px;padding:0 14px;font-size:11px}.demo-card>p{font-size:9px}.footer-main{align-items:start;flex-direction:column}.footer-bottom{flex-direction:column}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+
+/* A tap runs the smoke sequence once; hover/focus can preview the loop. */
+.smoking.is-playing .smoke-cloud i{animation-iteration-count:1}
